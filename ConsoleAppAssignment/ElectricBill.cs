@@ -25,41 +25,28 @@ public class ElectricBill
     }
 
     public void GetBill(int unit)
+{
+    switch (unit)
     {
-        int type = 0;  // Correct variable name
+        case <= 20:
+            Console.WriteLine("Your bill amount is: Rs. 100.");
+            break;
 
-        if (unit <= 20)
-        {
-            type = 1;
-        }
-        else if (unit > 20 && unit < 25)
-        {
-            type = 2;
-        }
-        else if (unit >= 25 && unit < 50)
-        {
-            type = 3;
-        }
-        else if (unit >=50)
-        {
-            type = 4;
-        }
+        case > 20 and < 25:
+            Console.WriteLine($"Your bill amount is: Rs. {unit * 5}");
+            break;
 
-        switch (type)
-        {
-            case 1:
-                Console.WriteLine("Your bill amount is: Rs. 100.");
-                break;
-            case 2:
-               Console.WriteLine($"Your bill Amount is: Rs. {unit * 5}");
-                break;
-            case 3:
-               Console.WriteLine($"Your bill Amount is: Rs. {unit * 10}");
-               break;
-            case 4:
-                Console.WriteLine("Your bill amount is: Rs. 2000.");
-                break;
-        }
+        case >= 25 and < 50:
+            Console.WriteLine($"Your bill amount is: Rs. {unit * 10}");
+            break;
+
+        case >= 50:
+            Console.WriteLine("Your bill amount is: Rs. 2000.");
+            break;
+
+       
     }
+}
+
 
 }
