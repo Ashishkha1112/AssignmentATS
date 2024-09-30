@@ -23,7 +23,7 @@ namespace ClinicManagement
                 1, 
                 "Bat Man", 
                 "KTM", 
-                "test@example.com", 
+                "bat@test.com", 
                 986855556, 
                 "Male", 
                 new DateTime(1995, 03, 15), 
@@ -35,9 +35,9 @@ namespace ClinicManagement
 
             var criticalPatient = new CriticalPatient(
                 1,
-                "Jane Doe",
+                "shyam",
                 "KTM",
-                "jane@example.com",
+                "shyam@gmail.com",
                 986855558,
                 "Female",
                 new DateTime(1990, 07, 20),
@@ -50,9 +50,9 @@ namespace ClinicManagement
 
             var admin = new Admin(
                 1,
-                "Alice Johnson",
+                "Rakesh",
                 "KTM",
-                "alice@example.com",
+                "rakesh@example.com",
                 986855559,
                 "Female",
                 new DateTime(1988, 11, 5),
